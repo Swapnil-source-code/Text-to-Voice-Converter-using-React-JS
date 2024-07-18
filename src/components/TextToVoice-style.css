@@ -76,4 +76,44 @@ select{
 }
 
 
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 768px) {
+  .hero h1 {
+    font-size: 40px;
+    margin-top: 45px;
+    margin-bottom: 45px;
+  }
+  textarea {
+    width: 500px;
+  }
+  .row {
+    width: 485px;
+  }
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+  .hero h1 {
+    text-align: center;
+    font-size: 35px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+  textarea {
+    width: 85%;
+  }
+  .row {
+    width: 0px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+  select{
+    padding: 0 25px 0px 20px;
+  }
+  button{
+    width: fit-content;
+    margin: auto;
+  }
+}
 
